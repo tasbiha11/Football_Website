@@ -1,0 +1,145 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    }
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}  
+    
+/* style of section1 */
+    
+.first-container{
+    width: 1260px;
+    height: 600px;
+    background-color: #2D25A0;
+}
+.copa-kicker{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+
+}
+.copa a{
+    color:white;
+    text-decoration: none;
+}
+.copa-title{
+    width: 485px;
+    height: 230px;
+    left:156px;
+    top:207px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px ;
+    color: #FFFFFF;
+}
+.button{
+    background-color: #E02C6D;
+    width: 168px;
+    height: 44px;
+    padding-top: 15px;
+    padding-left: 40px;
+    margin-top:40px;
+    display: flex;
+    
+}
+.fa-arrow-right{
+    color:white;
+    margin:5px;
+}
+
+.kick{
+    padding-top: 50px;
+}
+.kick img{
+    width: 472px;
+    height: 438px;
+    
+    }
+
+    /* style of section2 */
+.second-container{
+    margin-top: 50px;
+    background-color: #FFFFFF;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 27px;
+    column-gap: 30px;
+}
+
+.player{
+    width: 330px;
+    height: 474px;
+    padding:15px;
+    box-shadow: 0px 0px 5px
+}
+
+.player img{
+    width:330px;
+    height:280px;
+}
+
+/* style of section3 */
+
+.third-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+    background-color: #FFFFFF;
+
+}
+.highlights{
+    width: 466px;
+    height: 120px;
+    left: 0px;
+    top: 0px;
+    
+}
+.highlights h1{
+    font-weight:700; 
+    font-style: normal;
+    font-size:48px;
+    line-height: 60px;
+}
+
+.highlights p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.messi-img img{
+    width: 567px;
+    height: 427px;
+}
+
+/* style of section4 */
+.fourth-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 483.87px;
+    height: 213px;
+    margin-top: 50px;
+}
+.logo img{
+    width: 483.87px;
+    height: 110px;
+}
+
+.social-links{
+    width: 170px;
+    height: 32px;
+    padding-left:160px;
+}
+
+footer{
+    padding-left:100px;
+}
