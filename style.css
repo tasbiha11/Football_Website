@@ -7,13 +7,14 @@ main{
     align-items: center;
 }  
     
-/* style of section1 */
+/******************************* style of section1 *****************************/
     
 .first-container{
     width: 1260px;
     height: 600px;
     background-color: #2D25A0;
 }
+
 .copa-kicker{
     display:flex;
     flex-direction: row;
@@ -28,8 +29,6 @@ main{
 .copa-title{
     width: 485px;
     height: 230px;
-    left:156px;
-    top:207px;
     font-style: normal;
     font-weight: bold;
     font-size: 64px;
@@ -54,13 +53,19 @@ main{
 .kick{
     padding-top: 50px;
 }
+
+.kick:hover{
+    transform: rotate3d(5, 0, 5, 360deg);
+    transition: transform 2s linear;
+}
 .kick img{
     width: 472px;
     height: 438px;
     
     }
 
-    /* style of section2 */
+    /********************** style of section2 ***************************/
+
 .second-container{
     margin-top: 50px;
     background-color: #FFFFFF;
@@ -91,7 +96,7 @@ main{
 
 }
 
-/* style of section3 */
+/******************************** style of section3 *******************************/
 
 .third-container{
     display: grid;
@@ -126,7 +131,12 @@ main{
     height: 427px;
 }
 
-/* style of section4 */
+.messi-img:hover{
+    transform: scale(.5);
+    transition: transform 2s ease-in-out;
+}
+
+/************************** style of section4 ****************************/
 .fourth-container{
     display: flex;
     flex-direction: column;
@@ -149,4 +159,59 @@ main{
 
 footer{
     padding-left:100px;
+}
+
+                                    /*************** Media Quries ***********************/
+
+
+/******************************************* Mobile Devices *********************************************/
+
+
+@media only screen and (max-width:688px) {
+    .copa-kicker{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 130px;
+    }
+    .kick img{
+        width:200px;
+        height: 150px;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .third-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 320px;
+    }
+    .highlights{
+        padding-left: 130px;
+    }
+    messi-img img {
+        max-width: 100%;
+      }
+    
+}
+/******************************************* Tablet devices *********************************************/
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .copa-kicker{
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        padding-left: 200px;
+    }
+    .kick img{
+        width:300px;
+        height: 300px;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .third-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 320px;
+    }
 }
